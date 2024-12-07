@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.klef.jfsd.exam.Project" table="projects">
+        <id name="id" column="id">
+            <generator class="identity" />
+        </id>
+        <property name="projectName" column="project_name" />
+        <property name="duration" column="duration" />
+        <property name="budget" column="budget" />
+        <property name="teamLead" column="team_lead" />
+    </class>
+</hibernate-mapping>
